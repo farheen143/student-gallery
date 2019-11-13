@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int a,b,i;
+
+    scanf("%d %d",&a,&b);
+
+    if(b<10)
+
+    {
+
+        for(i=a;i<=b;i++)
+
+        {
+
+           printf("%d ",i);
+
+        }
+
+    }
+
+    else if(a>0 && b<=10)
+
+    {
+
+        for(i=a;i<=9;i++)
+
+        {
+
+            printf("0%d ",i);
+
+        }
+
+        if(i>=10)
+
+        {
+
+		for(i=10;i<=b;i++)
+		{
+	         	printf("%d ",i);
+		}
+        }
+
+    }
+
+    else if(a>0 && b<=999)
+
+    {
+
+        for(i=a;i<=b;i++)
+
+        {
+
+            if(i<=9)
+
+            {
+
+                printf("00%d ",i);
+
+            }
+
+            if(i>9 && i<100)
+
+            {
+
+                printf("0%d ",i);
+
+            }
+
+            if(i>=100)
+
+            {
+
+                printf("%d ",i);
+
+            }
+
+        }}
+
+    return 0;
+
+}
